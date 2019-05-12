@@ -27,12 +27,12 @@ module "monolith" {
   ]
 
   # Auto scaling group
-  asg_name                  = "monolith-asg"
+  asg_name                  = "example-asg"
   vpc_zone_identifier       = ["${var.subnet1}", "${var.subnet2}"]
   health_check_type         = "EC2"
   min_size                  = "${var.min_size}"
   max_size                  = "${var.max_size}"
   desired_capacity          = "${var.desired_capacity}"
   wait_for_capacity_timeout = 0
-  key_name                  =   "${var.key_name}"
+  key_name                  = "${var.key_name}"
 }
