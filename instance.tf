@@ -6,7 +6,7 @@ module "monolith" {
   # Launch configuration
   lc_name = "monolith-lc"
 
-  image_id        = "ami-07683a44e80cd32c5"
+  image_id        = "${var.ami}"
   instance_type   = "m5.large"
   security_groups = ["${aws_security_group.allow_ssh_and_httpd.name}"]
 

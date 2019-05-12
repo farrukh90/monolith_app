@@ -23,3 +23,7 @@ variable "desired_capacity" {
 variable "key_name" {
   
 }
+
+variable "ami" {
+  
+}
