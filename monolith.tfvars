@@ -1,4 +1,4 @@
-vpc_id              =          "vpc-908caaf6"
+vpc_id              =          "vpc-1471ad6e"
 min_size            =           1
 max_size            =           3
 desired_capacity    =           1
